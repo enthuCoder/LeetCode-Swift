@@ -16,7 +16,7 @@ class Solution_125 {
         var result = true
         
         // Check if remaining string is a pallindrome
-        for (index, val) in input.enumerated() where index < count/2 {
+        for (index, val) in input.enumerated() where index <= count/2 {
             let endIndex = count - index - 1
             if val != inputArr[endIndex] {
                 result = false
